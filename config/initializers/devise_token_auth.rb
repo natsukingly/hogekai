@@ -9,8 +9,6 @@ DeviseTokenAuth.setup do |config|
   # determines how long tokens will remain valid after they are issued.
   config.token_lifespan = 2.weeks
   config.default_password_reset_url = "localhost:5000/home/about"
-
-  config.secret_key = ENV.fetch('DEVISE_SECRET')
   # Sets the max number of concurrent devices per user, which is 10 by default.
   # After this limit is reached, the oldest tokens will be removed.
   # config.max_number_of_devices = 10
@@ -47,4 +45,8 @@ DeviseTokenAuth.setup do |config|
   # If, however, you wish to integrate with legacy Devise authentication, you can
   # do so by enabling this flag. NOTE: This feature is highly experimental!
   # config.enable_standard_devise_support = false
+end
+
+Devise.setup do |config|
+  config.secret_key = ENV.fetch('DEVISE_SECRET')
 end
