@@ -10,6 +10,7 @@ DeviseTokenAuth.setup do |config|
   config.token_lifespan = 2.weeks
   config.default_password_reset_url = "localhost:5000/home/about"
 
+  config.secret_key = ENV.fetch('DEVISE_SECRET')
   # Sets the max number of concurrent devices per user, which is 10 by default.
   # After this limit is reached, the oldest tokens will be removed.
   # config.max_number_of_devices = 10
