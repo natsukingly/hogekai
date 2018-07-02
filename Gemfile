@@ -36,7 +36,13 @@ gem 'jbuilder', '~> 2.5'
 # gem 'capistrano-rails', group: :development
 
 gem 'foreman'
+gem 'omniauth'
+gem 'devise'
+gem 'devise_token_auth'
+gem 'rack-cors'
 
+gem 'omniauth-twitter'
+gem 'dotenv-rails', '~> 2.1', '>= 2.1.1'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
