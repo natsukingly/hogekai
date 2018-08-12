@@ -1,5 +1,5 @@
 <template>
-  <h1>Welcome to hogekai</h1>
+  <h1>hogekai events index</h1>
 </template>
 
 <style scoped>

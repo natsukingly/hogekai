@@ -9,5 +9,5 @@ Rails.application.routes.draw do
     end
   end
   root 'home#about'
-
+  get '*path', to: 'home#about'
 end
